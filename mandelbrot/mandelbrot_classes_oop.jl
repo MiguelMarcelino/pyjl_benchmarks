@@ -24,5 +24,5 @@ function mandelbrot(limit, c)::Int64
 end
 
 if abspath(PROGRAM_FILE) == @__FILE__
-    println(mandelbrot(1000000, 0.2 + 0.3im))
+    mandelbrot(parse(Int, ARGS[1]), 0.2 + 0.3im)
 end

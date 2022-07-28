@@ -1,3 +1,6 @@
+import sys
+
+
 class MandelbrotComplex:
     def __init__(self):
         self.z = 0+0j
@@ -11,4 +14,4 @@ def mandelbrot(limit, c):
     return i+1
 
 if __name__ == "__main__":
-    print(mandelbrot(1000000, .2+.3j))
+    mandelbrot(int(sys.argv[1]), .2+.3j)
