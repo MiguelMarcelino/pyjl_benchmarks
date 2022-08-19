@@ -1,7 +1,7 @@
 using Classes
 
 
-@class Node begin
+@class mutable Node begin
     left::Union{Node,Nothing}
     right::Union{Node,Nothing}
 end
